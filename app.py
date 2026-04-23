@@ -1,7 +1,10 @@
-from flask import Flask, render_template, request
+from flask import Flask, send_from_directory
 
-app = Flask(__name__)
+app = Flask(name)
 
+@app.route("/")
+def home():
+    return send_from_directory("templates", "index.html")
 # ================= HOME =================
 @app.route('/')
 def home():
