@@ -1,1 +1,189 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Healthcare System</title>
 
+    <style>
+        body {
+            background: #0a0a0a;
+            color: white;
+            font-family: Arial;
+            margin: 0;
+        }
+
+        /* NAVBAR */
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            padding: 15px 40px;
+            background: #111;
+        }
+
+        .nav-links a {
+            color: white;
+            margin-left: 20px;
+            text-decoration: none;
+        }
+
+        /* MAIN */
+        .main {
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        /* CARDS */
+        .cards {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin-top: 40px;
+        }
+
+        .box {
+            background: #1c1c1c;
+            padding: 30px;
+            border-radius: 15px;
+            width: 250px;
+            text-align: center;
+        }
+
+        button {
+            margin-top: 10px;
+            padding: 10px 20px;
+            border: 1px solid white;
+            background: transparent;
+            color: white;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+
+        /* HOW IT WORKS */
+        .section {
+            text-align: center;
+            margin-top: 60px;
+        }
+
+        .steps {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+
+        .step {
+            background: #1c1c1c;
+            padding: 20px;
+            border-radius: 12px;
+            width: 200px;
+        }
+/* BOX HOVER EFFECT */
+.box {
+    transition: 0.3s;
+}
+
+.box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(255,255,255,0.2);
+}
+
+/* BUTTON HOVER */
+button:hover {
+    background: white;
+    color: black;
+    transform: scale(1.05);
+}
+
+/* STEP BOX HOVER */
+.step {
+    transition: 0.3s;
+}
+
+.step:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(255,255,255,0.2);
+}
+    </style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<div class="navbar">
+    <div>💙 PredictCare</div>
+
+    <div class="nav-links">
+        <a href="/">Home</a>
+        <a href="/about">About</a>
+        <a href="/guide">Guide</a>
+        <a href="/store">Store</a>
+    </div>
+</div>
+
+<!-- MAIN -->
+<div class="main">
+    <h1>Healthcare System 💙</h1>
+    <p>
+        A smart system that analyzes symptoms and health data to predict diseases,<br>
+        determine risk level and suggest personalized diet and lifestyle improvements.
+    </p>
+</div>
+
+<!-- CARDS -->
+<div class="cards">
+
+    <div class="box">
+        <h3>🩺 Health Checkup</h3>
+        <p>Check disease based on symptoms</p>
+        <a href="/health"><button>Start</button></a>
+    </div>
+
+    <div class="box">
+        <h3>🍎 Diet Analyzer</h3>
+        <p>Upload food image & get nutrition</p>
+        <a href="/diet"><button>Try Now</button></a>
+    </div>
+
+    <div class="box">
+        <h3>⚖️ Body Check</h3>
+        <p>Check BMI using height & weight</p>
+        <a href="/bmi"><button>Check</button></a>
+    </div>
+
+</div>
+
+<!-- HOW IT WORKS -->
+<div class="section">
+
+    <h2>How It Works ⚙️</h2>
+
+    <div class="steps">
+
+        <div class="step">
+            <h3>1️⃣ Input</h3>
+            <p>Enter your health data</p>
+        </div>
+
+        <div class="step">
+            <h3>2️⃣ Analysis</h3>
+            <p>System analyzes your data</p>
+        </div>
+
+        <div class="step">
+            <h3>3️⃣ Result</h3>
+            <p>Get health insights</p>
+        </div>
+
+    </div>
+
+</div>
+
+<!-- FINAL SECTION -->
+<div class="section">
+    <h2>Ready to Get Started? 🚀</h2>
+    <p>Take the first step towards better health</p>
+</div>
+
+</body>
+</html>
