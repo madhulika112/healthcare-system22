@@ -1,14 +1,12 @@
-from flask import Flask, send_from_directory
-
-app = Flask(name)
-
 @app.route("/")
 def home():
-    return send_from_directory("templates", "index.html")
-# ================= HOME =================
-@app.route('/')
-def home():
-    return render_template("index.html")
+    return """
+    <html>
+        <head>
+            <meta http-equiv="refresh" content="0; url=/index.html" />
+        </head>
+    </html>
+    """
 
 
 # ================= HEALTH =================
