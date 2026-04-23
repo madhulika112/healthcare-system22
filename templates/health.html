@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Health Checkup</title>
+
+<style>
+body {
+    background: #000;
+    color: white;
+    font-family: Arial;
+    text-align: center;
+}
+
+/* container */
+.container {
+    max-width: 900px;
+    margin: auto;
+}
+
+/* input */
+input, select {
+    padding: 10px;
+    margin: 10px;
+    border-radius: 6px;
+    border: none;
+    background: #1e1e1e;
+    color: white;
+}
+
+/* grid */
+.symptom-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    margin-top: 20px;
+}
+
+/* checkbox box */
+.symptom-grid label {
+    background: #1e1e1e;
+    padding: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.symptom-grid label:hover {
+    background: #333;
+}
+
+/* button */
+button {
+    padding: 10px 20px;
+    border-radius: 8px;
+    border: 1px solid white;
+    background: black;
+    color: white;
+    margin-top: 15px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: white;
+    color: black;
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>Health Checkup</h1>
+
+<form method="POST">
+
+<input type="number" name="age" placeholder="Enter Age">
+
+<div class="symptom-grid">
+
+<label><input type="checkbox" name="symptoms" value="fever"> Fever</label>
+<label><input type="checkbox" name="symptoms" value="cough"> Cough</label>
+<label><input type="checkbox" name="symptoms" value="fatigue"> Fatigue</label>
+
+<label><input type="checkbox" name="symptoms" value="headache"> Headache</label>
+<label><input type="checkbox" name="symptoms" value="dizziness"> Dizziness</label>
+<label><input type="checkbox" name="symptoms" value="nausea"> Nausea</label>
+
+<label><input type="checkbox" name="symptoms" value="vomiting"> Vomiting</label>
+<label><input type="checkbox" name="symptoms" value="acidity"> Acidity</label>
+<label><input type="checkbox" name="symptoms" value="body pain"> Body Pain</label>
+
+<label><input type="checkbox" name="symptoms" value="weakness"> Weakness</label>
+<label><input type="checkbox" name="symptoms" value="sleep problems"> Sleep Problems</label>
+<label><input type="checkbox" name="symptoms" value="anxiety"> Anxiety</label>
+
+<label><input type="checkbox" name="symptoms" value="chest pain"> Chest Pain</label>
+<label><input type="checkbox" name="symptoms" value="breathing issue"> Breathing Issue</label>
+<label><input type="checkbox" name="symptoms" value="loss of appetite"> Loss of Appetite</label>
+
+</div>
+
+<select name="duration">
+<option>1-2 days</option>
+<option>3-5 days</option>
+<option>1 week+</option>
+</select>
+
+<br>
+
+<button type="submit">Analyze</button>
+
+</form>
+
+</div>
+
+</body>
+</html>
