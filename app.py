@@ -1,12 +1,10 @@
+from flask import Flask, render_template, request
+
+app = Flask(__name__)
+
 @app.route("/")
 def home():
-    return """
-    <html>
-        <head>
-            <meta http-equiv="refresh" content="0; url=/index.html" />
-        </head>
-    </html>
-    """
+    return render_template("index.html")
 
 
 # ================= HEALTH =================
